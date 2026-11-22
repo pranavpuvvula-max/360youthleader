@@ -132,6 +132,18 @@ p{margin:0 0 1em;}
 .cta-band h2{color:#fff;margin-bottom:8px;}
 .cta-band p{color:#c7d1e2;margin:0;max-width:540px;}
 
+/* ===== Featured Classes ===== */
+.featured-classes-grid{grid-template-columns:repeat(6,1fr);}
+.featured-class-card{grid-column:span 2;padding:28px 26px;position:relative;overflow:hidden;border-top:4px solid var(--navy);}
+.featured-class-card:nth-child(4){grid-column:2/span 2;}
+.featured-class-card:nth-child(5){grid-column:4/span 2;}
+.featured-class-card.mind{border-top-color:#0097A7;}
+.featured-class-card.voice{border-top-color:#D81B60;}
+.featured-class-card.money{border-top-color:#FF8F00;}
+.featured-class-track{display:inline-block;margin-bottom:10px;font:700 12px/1.35 'Inter',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-text);}
+.featured-class-card h3{font-size:1.28rem;margin-bottom:16px;}
+.featured-class-card p{color:var(--muted);font-size:15px;margin:0;}
+
 /* ===== Footer ===== */
 .site-footer{background:var(--navy-700);color:#c7d1e2;padding:64px 0 32px;}
 .footer-grid{display:flex;gap:48px;flex-wrap:wrap;justify-content:space-between;}
@@ -151,12 +163,15 @@ p{margin:0 0 1em;}
   .hero-grid{flex-direction:column;}
   .hero-media{width:100%;}
   .grid-3{grid-template-columns:repeat(2,1fr);}
+  .featured-classes-grid{grid-template-columns:repeat(2,1fr);}
+  .featured-class-card,.featured-class-card:nth-child(4),.featured-class-card:nth-child(5){grid-column:auto;}
   .featured-card{flex-direction:column;}
   .featured-media{width:100%;min-height:0;aspect-ratio:16/9;}
 }
 @media (max-width:640px){
   .section{padding:64px 0;}
   .grid-3{grid-template-columns:1fr;}
+  .featured-classes-grid{grid-template-columns:1fr;}
   .quote-block,.cta-band{padding:32px 24px;}
   .featured-body{padding:28px 24px;}
 }
@@ -450,6 +465,47 @@ p{margin:0 0 1em;}
           <div class="hub-tag">Rooted in the Gita</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="featured-classes">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Courses Offered for the 2027 Pilot</span>
+      <h2>Featured Classes</h2>
+    </div>
+
+    <div class="grid featured-classes-grid">
+      <article class="card featured-class-card mind">
+        <span class="featured-class-track">Track: Mastery of the Mind, Body and Soul</span>
+        <h3>Modern Yoga &amp; Healthy Diet</h3>
+        <p>To perform our duties well, along with a strong mind, we need a strong body. This class gives Yoga a modern and youthful twist, paired with teaching Ayurvedic based healthy food habits. This is a practical class where students will learn how to use Ayurvedic principles to learn healthy recipes and actually make them hands on during class. This type of engagement will build lifelong healthy habits and develop healthy lifestyle choices both at home and at school.</p>
+      </article>
+
+      <article class="card featured-class-card mind">
+        <span class="featured-class-track">Track: Mastery of the Mind, Body and Soul</span>
+        <h3>Chess &amp; Critical Thinking</h3>
+        <p>This class uses chess as a tool to develop strategic thinking and problem-solving techniques. Through lessons, puzzles, and guided gameplay, students strengthen concentration, patience, logic, and the ability to think several steps ahead.</p>
+      </article>
+
+      <article class="card featured-class-card voice">
+        <span class="featured-class-track">Track: Voice, Brand and Influence</span>
+        <h3>Public Speaking (Middle School)</h3>
+        <p>Designed for students in grades 5-8, this course helps young speakers build confidence and communication skills in a supportive environment. Students learn voice projection, eye contact, storytelling, speech organization, and audience engagement through interactive activities and frequent speaking opportunities. The program culminates in a Parent Showcase where students demonstrate their growth as confident communicators.</p>
+      </article>
+
+      <article class="card featured-class-card voice">
+        <span class="featured-class-track">Track: Voice, Brand and Influence</span>
+        <h3>Public Speaking (High  School)</h3>
+        <p>Designed for students in grades 9-12, this program develops strong communication, leadership, and presentation skills. Students learn speech writing, persuasive speaking, research and argumentation, presentation design, and effective Q&amp;A techniques. Through regular practice, video feedback, and structured presentations, students gain the confidence needed for academic, leadership, and real-world success.</p>
+      </article>
+
+      <article class="card featured-class-card money">
+        <span class="featured-class-track">Track: Money Smarts</span>
+        <h3>Personal Finance</h3>
+        <p>Give your child a head start on essential life skills. This course introduces students to budgeting, saving, investing, responsible spending, and financial goal-setting through engaging real-world activities. Students develop the financial literacy and decision-making skills needed for future independence and success.</p>
+      </article>
     </div>
   </div>
 </section>
